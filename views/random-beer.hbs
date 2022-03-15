@@ -1,0 +1,15 @@
+<section>
+    {{#with beer}}
+        <h2>{{name}}</h2>
+        <img src={{image_url}}></img>
+        <p>{{tagline}}</p>
+        <article>{{description}}</article>
+        <h3>Food pairing</h3>
+        <ul>
+            {{#each food_pairing}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <article><b>Brewers Tips: </b>{{brewers_tips}}</article>
+    {{/with}}
+</section>
