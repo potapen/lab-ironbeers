@@ -1,11 +1,13 @@
 {{#each beers}}
     {{!-- <div>{{this}} {{this.name}} </div> --}}
     <div>
+        
         {{#with this}}
-            <h2>{{name}}</h2>
+            {{> beerpartial this}}
+            {{!-- <h2>{{name}}</h2>
             <img src={{image_url}}></img>
             <p>{{tagline}}</p>
-            <article>{{description}}</article>
+            <article>{{description}}</article> --}}
         {{/with}}
     </div>
 {{/each}}
