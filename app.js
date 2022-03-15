@@ -47,8 +47,8 @@ app.get('/random-beer', (req, res) => {
 });
 
 
-app.get('/beer/:id', (req, res) => {
-  let id = req.params.id
+app.get('/beer/:oneBeer', (req, res) => {
+  let id = req.params.oneBeer
   console.log('req.params.name: ',id)
   punkAPI
   .getBeer(id)
